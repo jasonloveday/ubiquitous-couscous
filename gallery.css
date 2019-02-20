@@ -291,6 +291,7 @@ body {
         column-count: 3; 
     }  
 }
+
 @media screen and (max-width: 780px) {  
     /* Set the columns style */
     .niceGallery ul.entries-columns {  
@@ -298,6 +299,7 @@ body {
         -moz-column-count: 2; 
         column-count: 2; 
     }  
+
     .viewbox .details {
         bottom: 5%; 
     }
@@ -307,7 +309,12 @@ body {
         line-height: 20px;
         font-size: 0.9em;
     } 
+
+    #contentGallery {
+        margin-left: 0%;
+    }
 }
+
 @media screen and (max-width: 680px) {  
     /* Set the columns style */
     .niceGallery ul.entries-columns { 
@@ -325,7 +332,7 @@ body {
     position: fixed;
     height: 100%;
     overflow: auto;
-    padding-top: 25%;
+    padding-top: 20%;
     font-size: 0.8rem;
     font-weight: 700;
   }
