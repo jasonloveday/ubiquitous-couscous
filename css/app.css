@@ -1,0 +1,385 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(80, 85, 107);
+  background-color: #e5ebea;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  color: rgb(80, 85, 107);
+  background-color: rgb(80, 85, 107);
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  font-weight: 700;
+  color: inherit;
+}
+/* ----- Specific buttons for our theme ----- */
+.btn-theme {
+  background-color: rgb(80, 85, 107);
+  border: none;
+  color: whitesmoke;
+}
+
+/* ----- Page title over background ----- */
+.caption {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.caption span.border {
+  background-color: rgba(80, 85, 107, 0.4);
+  color: #e5ebea;
+  padding: 18px;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.caption span.border:hover {
+  background-color: rgb(80, 85, 107);
+}
+
+.caption a:hover {
+  text-decoration: none;
+}
+
+
+/* ----- Image styling ----- */
+img {
+  width: 100%;
+  height: auto;
+}
+
+#carouselImg {
+  max-width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+img:hover {
+  color: rgba(14, 14, 15, 0.15);
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+#imageGallery {
+  height: 100%;
+  column-count: 3;
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+#imageGallery img {
+  padding: 12px;
+  padding-left: 2px;
+}
+
+/* ----- Background images ----- */
+.bg {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 960px;
+  background-color: black;
+  /* -webkit-filter: blur(3px); */
+  /* filter: grayscale(75%) blur(3px); */
+  /* filter: grayscale(75%); */
+  opacity: .99;
+}
+
+.fg {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 960px;
+  /* -webkit-filter: blur(3px); */
+  /* filter: grayscale(75%) blur(3px); */
+}
+
+.homepage {
+  background-image: url("../images/30456630457_4c43ebecd0_k.jpg");
+}
+
+.foodandBev {
+  background-image: url("../images/45166347674_fa6d4bd084_b.jpg");
+}
+
+.realEstate {
+  background-image: url("../images/42610018361_567186653f_o.jpg");
+}
+
+.editorial {
+  background-image: url("../images/30456630457_4c43ebecd0_k.jpg");
+}
+
+.corporate {
+  background-image: url("../images/45166298934_e6b79e4ef0_k.jpg");
+}
+
+.portraitWedding {
+  background-image: url("../images/44765375732_75bb4ea38f_k.jpg");
+}
+
+.fashion {
+  background-image: url("../images/44266150955_1820b64602_k.jpg");
+}
+.portrait {
+  background-image: url("../images/40824461810_3ffbdb563d_k.jpg");
+}
+
+/* ----- Navbar styling ----- */
+.navbar {
+  background-color: rgb(99, 103, 119);
+}
+
+.navbar-toggler {
+  color: pink;
+}
+
+.dropdown-divider {
+  height: 1px;
+  border: none;
+  color: #e5ebea;
+  background-color: #e5ebea;
+  opacity: 0.3;
+}
+
+/* ----- Sidebar styling ----- */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  padding-top: 10%;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.sidebar.scrolled {
+  display: block;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(80, 85, 107);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: end;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sidebar a.active {
+  /* padding-bottom: 0%; */
+  font-weight: 700;
+}
+
+.sidebar a:hover {
+  font-weight: 700;
+}
+
+.socials a {
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+}
+
+.socials li {
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 600px;
+}
+
+/* ----- Lightbox controls ----- */
+.ekko-lightbox-item img {
+  width: 100%;
+  padding: 0px;
+}
+
+.modal-header {
+  background-color: pink;
+}
+
+h4 {
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+/* ----- Homepage carousel styling ----- */
+.carousel-item {
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 10px;
+  border-color: rgb(80, 85, 107);
+  border-style: solid;
+  border-radius: 1%;
+}
+
+.container {
+  padding-bottom: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jumbotron {
+  background-color: inherit;
+  margin-top: 40px;
+  margin-left: 200px;
+  max-height: 50px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 3rem;
+}
+
+.cursive {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#page2 {
+  height: 1px;
+}
+
+.about {
+  margin-top: 60px;
+}
+
+.vertical-center {
+  max-height: 15vh;
+  max-width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  /* max-height: 50px; */
+  height: 25px;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5ebea;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.display-4 {
+  font-size: 3vw;
+}
+
+.display-5 {
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 968px) {
+  #imageGallery {
+    margin-left: 0px;
+    column-count: 2;
+  }
+
+  .jumbotron {
+    margin-left: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.scrolled {
+    display: none;
+  }
+
+  #mobileNavbar {
+    display: flex;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .display-5 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  #imageGallery {
+    margin-left: 0px;
+    column-count: 2;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  /* Set the columns style */
+  #imageGallery {
+    width: 100%;
+    column-count: 1;
+  }
+
+  .caption span.border {
+    font-size: 1rem;
+    padding: 9px;
+    letter-spacing: 5px;
+  }
+
+
+}
+
+/* Done! Here's the API key and secret for your new app:
+	jquery flickr gallery builder
+Key:
+4bcd6e3d1a3647645b6b9150d6b01300
+
+Secret:
+c1c57bfa3b7d59b0
+
+Edit app details - Edit auth flow for this app - View all Apps by You */
