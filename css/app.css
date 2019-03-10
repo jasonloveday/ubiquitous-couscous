@@ -33,6 +33,9 @@ a:hover {
   color: whitesmoke;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
 /* ----- Page title over background ----- */
 .caption {
   position: absolute;
@@ -44,10 +47,11 @@ a:hover {
 }
 
 .caption span.border {
-  background-color: rgba(80, 85, 107, 0.4);
+  background-color: rgba(80, 85, 107, 0.6);
   color: #e5ebea;
   padding: 18px;
-  font-size: 25px;
+    window.onload = alert(localStorage.getItem("page"));
+    font-size: 25px;
   font-weight: 700;
   letter-spacing: 10px;
 }
@@ -119,11 +123,11 @@ img:hover {
   background-image: url("../images/30456630457_4c43ebecd0_k.jpg");
 }
 
-.foodandBev {
+.foodAndBev {
   background-image: url("../images/45166347674_fa6d4bd084_b.jpg");
 }
 
-.realEstate {
+.property {
   background-image: url("../images/42610018361_567186653f_o.jpg");
 }
 
@@ -135,7 +139,7 @@ img:hover {
   background-image: url("../images/45166298934_e6b79e4ef0_k.jpg");
 }
 
-.portraitWedding {
+.lifestyle {
   background-image: url("../images/44765375732_75bb4ea38f_k.jpg");
 }
 
@@ -166,10 +170,11 @@ img:hover {
 /* ----- Sidebar styling ----- */
 .sidebar {
   margin: 0;
+  margin-top: 55px;
   padding: 0;
   width: 200px;
   position: fixed;
-  height: 100%;
+  max-height: 835px;
   overflow: auto;
   padding-top: 10%;
   font-size: 0.8rem;
@@ -190,7 +195,7 @@ img:hover {
   padding-bottom: 8px;
 }
 
-.sidebar a.active {
+.sidebar li.active {
   /* padding-bottom: 0%; */
   font-weight: 700;
 }
@@ -254,15 +259,15 @@ h4 {
   background-color: inherit;
   margin-top: 40px;
   margin-left: 200px;
-  max-height: 50px;
   justify-content: center;
   align-items: flex-end;
-  padding: 3rem;
+  padding: 0;
+  display: flex;
 }
 
 .cursive {
   font-family: 'Caveat', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -283,18 +288,21 @@ h4 {
 
 .footer {
   position: fixed;
-  /* max-height: 50px; */
-  height: 25px;
+  height: auto;
   width: 100%;
   bottom: 0px;
   margin-bottom: 0px;
-  padding-bottom: 0px;
+  padding: 10px;
   text-align: center;
-  font-size: 0.8rem;
-  display: flex;
+  font-size: 0.9rem;
   align-items: center;
   justify-content: center;
   background-color: #e5ebea;
+  display: none;
+}
+
+.footer.scrolled {
+  display: flex;
 }
 
 .footer p {
@@ -340,10 +348,6 @@ h4 {
     font-size: 2rem;
   }
 
-  .display-5 {
-    font-size: 1.5rem;
-  }
-
 }
 
 @media screen and (max-width: 780px) {
@@ -369,6 +373,9 @@ h4 {
     font-size: 1rem;
     padding: 9px;
     letter-spacing: 5px;
+  }
+  .cursive {
+    font-size: 1.3rem;
   }
 
 

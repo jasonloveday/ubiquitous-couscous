@@ -63,72 +63,13 @@
     
       </script>
   <div id="gg-screen"></div>
+  <div w3-include-html="includes/navbar.html"></div>
+  <div w3-include-html="includes/sidebar.html"></div>
 
-  <nav class="navbar navbar-dark d-lg-none fixed-top">
-    <a class="navbar-brand" href="#">Iris Blu</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <div class="dropdown-divider w-25"></div>
-        <li class="nav-item"><a class="nav-link" href="foodAndBev.html">Food and Beverage</a></li>
-        <li class="nav-item"><a class="nav-link" href="realEstate.html">Property</a></li>
-        <li class="nav-item"><a class="nav-link" href="editorial.html">Editorial</a></li>
-        <li class="nav-item"><a class="nav-link" href="fashion.html">Fashion</a></li>
-        <li class="nav-item"><a class="nav-link" href="corporate.html">Corporate</a></li>
-        <li class="nav-item"><a class="nav-link" href="portrait.html">Portrait</a></li>
-        <li class="nav-item"><a class="nav-link" href="lifestyle.html">Lifestyle</a></li>
-        <div class="dropdown-divider w-25"></div>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="#">Blog</a></li> -->
-        <div class="dropdown-divider w-25"></div>
-        <span class="socials justify-content-start">
-          <li class="nav-item float-left ml-1"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="nav-item float-left ml-3"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
-          <li class="nav-item float-left ml-3"><a class="nav-link" href="#"><i class="fab fa-flickr"></i></a></li>
-        </span>
-      </ul>
-    </div>
-  </nav>
-  <ul id="mainSidebar" class="sidebar scrolled">
-    <li><a class="active" href="index.html#page2">Home</a></li>
-    <hr>
-    <li><a href="foodAndBev.html">Food and Beverage</a></li>
-    <li><a href="realEstate.html">Property</a></li>
-    <li><a href="editorial.html">Editorial</a></li>
-    <li><a href="fashion.html">Fashion</a></li>
-    <li><a href="corporate.html">Corporate</a></li>
-    <li><a href="portrait.html">Portrait</a></li>
-    <li><a href="lifestyle.html">Lifestyle</a></li>
-    <hr>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <!-- <li><a href="#">Blog</a></li> -->
-    <hr>
-
-    <ul class="socials">
-      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fab fa-flickr"></i></a></li>
-    </ul>
-  </ul>
-  <!-- <div class="jumbotron fixed-top"></div> -->
   <div class="bg homepage"></div>
   <div class="caption">
    <a href="#page2"><span class="border">Welcome to Iris Blu</span></a>
   </div>
-  <!-- <div class="fg homepage"></div>
-  <div class="caption">
-    <span class="border">Welcome to Iris Blu</span>
-  </div> -->
-
 
   <div id="page2" class="d-none d-md-block"></div>
   <div class="container justify-content-center pt-5 mt-5">
@@ -144,9 +85,9 @@
       <div class="carousel-inner">
         <div class="row justify-content-center align-items-start pb-md-3">
           <div class="col-md-8">
-            <div id="flickr">
+            <div class="flickrAlbum" id="flickr" data="">
               <div class="carousel-item active">
-                <img id="carouselImg" src="images/45166299654_8d913d4d6d_o.jpg" alt="First slide">
+                <img id="carouselImg" src="../images/45166299654_8d913d4d6d_o.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
               </div>
@@ -178,22 +119,23 @@
 
 
   </div>
+  <div w3-include-html="includes/footer.html"></div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="../js/ekko-lightbox.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/irisBlu.js"></script>
 
-  <script>
+  <!-- <script>
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
       event.preventDefault();
       $(this).ekkoLightbox({});
     });
-  </script>
+  </script> -->
   <!-- <script>
     $(function () {
       $(document).scroll(function () {
