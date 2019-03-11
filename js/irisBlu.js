@@ -57,7 +57,7 @@ function getImages() {
     var irisBlu = JSON.parse(localStorage.getItem('irisBlu')) || [];
     $(".bg").removeClass(irisBlu.oldCategory);
     $(".bg").addClass(irisBlu.newCategory);
-    $(".border")[0].innerHTML = irisBlu.newGalleryName;   
+    $(".border")[0].innerHTML = irisBlu.newGalleryName;
     var album = irisBlu.newGalleryId;
     var settings = {
         "async": true,
@@ -101,7 +101,7 @@ function changeGallery() {
 
     // get the data from localStorage
     var irisBlu = JSON.parse(localStorage.getItem('irisBlu')) || [];
-   
+
     // set the album ID in the html
     $('#flickr').attr('data', irisBlu.newGalleryId);
 
@@ -110,7 +110,7 @@ function changeGallery() {
 
     // set the bg image tag
     $(".bg").removeClass(irisBlu.oldCategory);
-    $(".bg").addClass(irisBlu.newCategory);   
+    $(".bg").addClass(irisBlu.newCategory);
 
     // set current sidebar link to active
     // remove highlight from old link
@@ -132,25 +132,34 @@ function changeGallery() {
 }
 
 function writeStorage(clicked) {
+    // make sure the var is clear
     var irisBlu = {};
+    localStorage.clear('irisBlu');
+
     irisBlu.newCategory = (document.getElementById(clicked.id).attributes.name.value);
-    irisBlu.newGalleryId = (document.getElementById(clicked.id).attributes.id.value);
+
+    if ((document.getElementById(clicked.id).attributes.id.value).indexOf('N') > -1) {
+        irisBlu.newGalleryId = (document.getElementById(clicked.id).attributes.id.value).replace('N', '');
+    } else {
+        irisBlu.newGalleryId = (document.getElementById(clicked.id).attributes.id.value);;
+    }
+    
     if (irisBlu.newCategory == "foodAndBev") {
         irisBlu.newGalleryName = "Food & Beverage";
     } else {
         irisBlu.newGalleryName = irisBlu.newCategory;
     }
+    
     localStorage.setItem('irisBlu', JSON.stringify(irisBlu));
     $("[href]").each(function () {
         if (this.href == window.location.href) {
-            console.log("winner");
             irisBlu.oldGalleryId = (document.getElementById("flickr").attributes.data.value);
             irisBlu.oldCategory = (document.getElementById(irisBlu.oldGalleryId).attributes.name.value);
             localStorage.setItem('irisBlu', JSON.stringify(irisBlu));
             changeGallery();
         }
     });
-    
+
     var irisBlu = {};
 }
 
