@@ -145,7 +145,7 @@ function writeStorage(clicked) {
         if (this.href == window.location.href) {
             console.log("winner");
             irisBlu.oldGalleryId = (document.getElementById("flickr").attributes.data.value);
-            // irisBlu.oldCategory = (document.getElementById(irisBlu.oldGalleryId).attributes.name.value);
+            irisBlu.oldCategory = (document.getElementById(irisBlu.oldGalleryId).attributes.name.value);
             localStorage.setItem('irisBlu', JSON.stringify(irisBlu));
             changeGallery();
         }
