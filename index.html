@@ -13,7 +13,6 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/app.css" type="text/css">
-  <link rel="stylesheet" href="css/ekko-lightbox.css" type="text/css">
 
 
   <!-- Google Fonts -->
@@ -40,8 +39,6 @@
     
         $.ajax(settings).done(function (data) {
           console.log(data);
-    
-    
     
           $("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
           $.each(data.photos.photo, function (i, gp) {
@@ -130,21 +127,7 @@
   <script src="js/jquery.fancybox.js"></script>
   <script src="js/irisBlu.js"></script>
 
-  <!-- <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox({});
-    });
-  </script> -->
-  <!-- <script>
-    $(function () {
-      $(document).scroll(function () {
-        var $sidebar = $("#mainSidebar");
-        var $gallery = $("#imageGallery");
-        // $sidebar.toggleClass("scrolled", $(this).scrollTop() > $sidebar.height());
-        $sidebar.toggleClass("scrolled", $(this).scrollTop() > $sidebar.height());
-      });
-    }); -->
+  
   <script>
     w3IncludeHTML();
   </script>

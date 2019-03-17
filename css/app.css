@@ -86,13 +86,15 @@ img:hover {
 #imageGallery {
   height: 100%;
   column-count: 3;
-  margin-left: 200px;
-  padding: 1px 16px;
+  /* margin-left: 250px; */
+  /* margin-right: 50px; */
+  /* padding: 1px 16px; */
 }
 
 #imageGallery img {
-  padding: 12px;
-  padding-left: 2px;
+  /* padding:8px; */
+  /* padding-left: 1px; */
+  padding-top: 16px;
 }
 
 /* ----- Background images ----- */
@@ -103,10 +105,8 @@ img:hover {
   background-repeat: no-repeat;
   height: 960px;
   background-color: black;
-  /* -webkit-filter: blur(3px); */
-  /* filter: grayscale(75%) blur(3px); */
-  /* filter: grayscale(75%); */
   opacity: .99;
+  display: flex;
 }
 
 .fg {
@@ -171,13 +171,14 @@ img:hover {
 .sidebar {
   margin: 0;
   margin-top: 55px;
+  margin-left: 100px;
   padding: 0;
   width: 200px;
   position: fixed;
   max-height: 835px;
   overflow: auto;
   padding-top: 10%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: none;
 }
 
@@ -235,7 +236,7 @@ img:hover {
 
 h4 {
   /* text-align: center; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /* ----- Homepage carousel styling ----- */
@@ -258,7 +259,7 @@ h4 {
 .jumbotron {
   background-color: inherit;
   margin-top: 40px;
-  margin-left: 200px;
+  /* margin-left: 200px; */
   justify-content: center;
   align-items: flex-end;
   padding: 0;
@@ -359,6 +360,10 @@ h4 {
   .content {
     margin-left: 0;
   }
+
+  .bg {
+    height: 568px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -376,6 +381,9 @@ h4 {
   }
   .cursive {
     font-size: 1.3rem;
+  }
+  .bg {
+    height: 580px;
   }
 
 
