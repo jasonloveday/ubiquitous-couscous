@@ -57,8 +57,7 @@ a:hover {
   background-color: rgba(80, 85, 107, 0.6);
   color: #e5ebea;
   padding: 18px;
-    window.onload = alert(localStorage.getItem("page"));
-    font-size: 25px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 10px;
 }
@@ -241,10 +240,6 @@ img:hover {
   background-color: pink;
 }
 
-h4 {
-  /* text-align: center; */
-  /* text-transform: uppercase; */
-}
 
 /* ----- Homepage carousel styling ----- */
 .carousel-item {
@@ -396,13 +391,3 @@ h4 {
 
 
 }
-
-/* Done! Here's the API key and secret for your new app:
-	jquery flickr gallery builder
-Key:
-4bcd6e3d1a3647645b6b9150d6b01300
-
-Secret:
-c1c57bfa3b7d59b0
-
-Edit app details - Edit auth flow for this app - View all Apps by You */
