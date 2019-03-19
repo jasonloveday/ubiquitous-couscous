@@ -29,7 +29,7 @@ a:hover {
 }
 #logoSidebar {
   width: 150px;
-  height: auto;
+  /* height: auto; */
   margin-left: 50px;
   padding-bottom: 2rem;
 }
@@ -270,7 +270,7 @@ img:hover {
 
 .cursive {
   font-family: 'Caveat', cursive;
-  color: #8eb8e5;
+  color: #0590fd;
   font-size: 2rem;
   text-align: center;
 }
