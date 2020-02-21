@@ -81,16 +81,16 @@ function getImages() {
 };
 
 // Make the current sidebar link highlighted
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    $("[href]").each(function () {
-        if (this.href == window.location.href) {
-            $(this).addClass("active");
-        }
-    });
+//     $("[href]").each(function () {
+//         if (this.href == window.location.href) {
+//             $(this).addClass("active");
+//         }
+//     });
 
 
-});
+// });
 
 function changeGallery() {
 

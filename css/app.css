@@ -165,7 +165,13 @@ img:hover {
 
 /* ----- Navbar styling ----- */
 .navbar {
-  background-color: rgb(99, 103, 119);
+  background-color: rgba(80, 85, 107, 0.6);
+  min-height: 5px;
+  padding: 0px 5px;
+  color: white;
+}
+.navbar-brand {
+  font-size: 1rem;
 }
 
 .navbar-toggler {
@@ -180,6 +186,10 @@ img:hover {
   opacity: 0.3;
 }
 
+.navbar-nav {
+  text-align: center;
+  color: white;
+}
 /* ----- Sidebar styling ----- */
 .sidebar {
   margin: 0;
@@ -395,7 +405,7 @@ img:hover {
     font-size: 1.3rem;
   }
   .bg {
-    height: 580px;
+    height: 896px;
   }
 
 
