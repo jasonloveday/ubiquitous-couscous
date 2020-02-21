@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Pro:200,400,600&display=swap" rel="stylesheet">
+
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <script>
+  </script>
+  <title>Iris Blu Photography</title>
+</head>
+
+<body onload="getImages('72157690044497083')">
+ 
+  <div w3-include-html="includes/menu.html"></div>
+  <div class="row justify-content-center">
+    <p>Editorial</p>
+  </div>
+  <div id="galleryContainer" class="container">
+
+
+    <div class="col-lg-12">
+      <div class=" jumbotron d-flex justify-content-center align-items-center">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa incidunt magnam consequuntur animi hic,
+          eveniet
+          temporibus obcaecati dolore ipsam illum?</p>
+      </div>
+    </div>
+    <div id="imageGallery" class="gallery">
+      <div class="flickrAlbum" id="flickr" data="72157690044034543"></div>
+    </div>
+  </div>
+  <div class="socials">
+    <div class="row justify-content-center align-items-center">
+        <p>Follow</p>
+    </div>
+    <div class="row justify-content-around">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+  <div w3-include-html="includes/footer.html"></div>
+  <!-- Optional JavaScript -->
+  <script>var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("mainFooter").style.bottom = "0";
+      } else {
+        document.getElementById("mainFooter").style.bottom = "-80px";
+      }
+      prevScrollpos = currentScrollPos;
+    } </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/irisBlu.js"></script>
+
+</body>
+
+</html>

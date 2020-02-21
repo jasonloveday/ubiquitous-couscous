@@ -52,13 +52,7 @@ $(document).scroll(function () {
 // <div class="flickrAlbum" id="flickr" data="72157690044034543"></div>
 // </div>
 
-function getImages() {
-    var irisBlu = {};
-    var irisBlu = JSON.parse(localStorage.getItem('irisBlu')) || [];
-    $(".bg").removeClass(irisBlu.oldCategory);
-    $(".bg").addClass(irisBlu.newCategory);
-    $(".border")[0].innerHTML = irisBlu.newGalleryName;
-    var album = irisBlu.newGalleryId;
+function getImages(album) {
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -91,6 +85,7 @@ function getImages() {
 
 
 // });
+
 
 function changeGallery() {
 

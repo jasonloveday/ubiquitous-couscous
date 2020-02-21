@@ -5,22 +5,21 @@
   <script src="https://www.w3schools.com/lib/w3data.js"></script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/app.css" type="text/css">
 
-
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Pro:200,400,600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Pro:200,400,600&display=swap" rel="stylesheet">
 
   <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -31,48 +30,42 @@
   <script>
 
     var settings = {
-          "async": true,
-          "crossDomain": true,
-          "url": "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4bcd6e3d1a3647645b6b9150d6b01300&user_id=156865819%40N02&tags=featured&format=json&nojsoncallback=1",
-          "headers": {}
-        }
-    
-        $.ajax(settings).done(function (data) {
-          console.log(data);
-    
-          $("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
-          $.each(data.photos.photo, function (i, gp) {
-    
-            var farmId = gp.farm;
-            var serverId = gp.server;
-            var id = gp.id;
-            var secret = gp.secret;
-    
-            console.log(farmId + ", " + serverId + ", " + id + ", " + secret);
-    
-            //  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
-    
-            // $("#flickr").append('<a href="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '_b.jpg" data-toggle="lightbox" data-gallery="example-gallery" ><img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
-            $("#flickr").append('<div class="carousel-item"><img class="d-block w-100" id="carouselImg" src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '_b.jpg"/>');
-    
-          });
-        });
-    
-      </script>
-  <div id="gg-screen"></div>
-  <div class="jumbotron justify-content-center">
-    <p class="cursive">Iris Blu Photography</p>
-  </div>
-  <div class="container">
-  <div class="row justify-content-between menu px-3 mx-5">
-    <a href="#">Home </a>
-    <a href="#">Portfolio</a>
-    <a href="#">About </a>
-    <a href="#">Contact </a>
-  </div>
-  </div>
-  <div id="page2" class="d-none d-md-block"></div>
-  <div class="container justify-content-center pt-5 mt-5">
+      "async": true,
+      "crossDomain": true,
+      "url": "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4bcd6e3d1a3647645b6b9150d6b01300&user_id=156865819%40N02&tags=featured&format=json&nojsoncallback=1",
+      "headers": {}
+    }
+
+    $.ajax(settings).done(function (data) {
+      console.log(data);
+
+      $("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
+      $.each(data.photos.photo, function (i, gp) {
+
+        var farmId = gp.farm;
+        var serverId = gp.server;
+        var id = gp.id;
+        var secret = gp.secret;
+
+        console.log(farmId + ", " + serverId + ", " + id + ", " + secret);
+
+        //  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+
+        // $("#flickr").append('<a href="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '_b.jpg" data-toggle="lightbox" data-gallery="example-gallery" ><img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
+        $("#flickr").append('<div class="carousel-item"><img class="d-block w-100" id="carouselImg" src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '_b.jpg"/>');
+
+      });
+    });
+
+  </script>
+  <!-- <div class="row justify-content-center mt-5 mb-0">
+    <p>Iris Blu Photography</p>
+  </div> -->
+
+  <div class="mt-0" w3-include-html="includes/menu.html"></div>
+
+
+  <div id="carousel" class="container justify-content-center">
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="row justify-content-center align-items-start pb-md-3">
@@ -101,23 +94,29 @@
     <!-- <hr> -->
 
   </div>
-  <div class="row justify-content-center">
-    <div class="col md-6">
+  <div class="socials">
+    <div class="row justify-content-center align-items-center">
       <p>Follow</p>
+    </div>
+    <div class="row justify-content-around">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
   </div>
   <div w3-include-html="includes/footer.html"></div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="js/jquery.fancybox.js"></script>
   <script src="js/irisBlu.js"></script>
 
-  
+
   <script>
     w3IncludeHTML();
   </script>
