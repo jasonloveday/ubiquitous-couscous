@@ -40,7 +40,7 @@ body.compensate-for-scrollbar {
     bottom: 0;
     left: 0;
     position: absolute;
-    right: 0;
+    right: 1.65%;
     top: 0;
 }
 
@@ -185,12 +185,13 @@ body.compensate-for-scrollbar {
     background: transparent;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    left: 0;
+    /* left: 0; */
     max-width: none;
     overflow: visible;
     padding: 0;
     position: absolute;
     top: 0;
+    right: 0;
     -ms-transform-origin: top left;
     transform-origin: top left;
     transition-property: transform, opacity;
