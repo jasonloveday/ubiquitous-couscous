@@ -1,3 +1,7 @@
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ body {
   letter-spacing: 1px;
   font-weight: 200;
   margin-top: 50px;
- }
+}
 
 hr {
   height: 1px;
@@ -29,28 +33,33 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 a:hover {
   font-weight: 700;
   color: inherit;
 }
+
 .menu {
   font-weight: 200;
   font-size: 14px;
   letter-spacing: 1px;
   margin-top: 120px;
   margin-bottom: 60px;
-
 }
+
 .container {
   width: 100%;
 }
+
 #logoSidebar {
   width: 150px;
   /* height: auto; */
   margin-left: 15px;
   padding-bottom: 2rem;
 }
+
 /* ----- Specific buttons for our theme ----- */
+
 .btn-theme {
   background-color: rgb(80, 85, 107);
   border: none;
@@ -60,7 +69,9 @@ a:hover {
 .uppercase {
   text-transform: uppercase;
 }
+
 /* ----- Page title over background ----- */
+
 .caption {
   position: absolute;
   left: 0%;
@@ -88,8 +99,8 @@ a:hover {
   text-decoration: none;
 }
 
-
 /* ----- Image styling ----- */
+
 img {
   width: 100%;
   height: auto;
@@ -123,6 +134,7 @@ img:hover {
 }
 
 /* ----- Background images ----- */
+
 .bg {
   background-size: cover;
   background-position: center;
@@ -171,25 +183,30 @@ img:hover {
 .fashion {
   background-image: url("../images/44266150955_1820b64602_k.jpg");
 }
+
 .portrait {
   background-image: url("../images/40824461810_3ffbdb563d_k.jpg");
 }
 
 /* ----- Navbar styling ----- */
+
 .dropdown-menu {
   border: none;
 }
+
 .dropdown-menu a {
   font-weight: 200;
   font-size: 14px;
   text-align: left;
 }
+
 .navbar {
   background-color: rgba(80, 85, 107, 0.6);
   min-height: 5px;
   padding: 0px 5px;
   color: white;
 }
+
 .navbar-brand {
   font-size: 1rem;
 }
@@ -210,7 +227,9 @@ img:hover {
   text-align: center;
   color: white;
 }
+
 /* ----- Sidebar styling ----- */
+
 .sidebar {
   margin: 0;
   margin-top: 100px;
@@ -253,6 +272,7 @@ img:hover {
   margin-top: 60px;
   margin-bottom: 20px;
 }
+
 .socials a {
   font-size: 1.3rem;
   padding-left: 1.5rem;
@@ -266,6 +286,7 @@ img:hover {
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
 .content {
   margin-left: 200px;
   padding: 1px 16px;
@@ -273,6 +294,7 @@ img:hover {
 }
 
 /* ----- Lightbox controls ----- */
+
 .ekko-lightbox-item img {
   width: 100%;
   padding: 0px;
@@ -282,8 +304,8 @@ img:hover {
   background-color: pink;
 }
 
-
 /* ----- Homepage carousel styling ----- */
+
 .carousel-item {
   border-top: 1px;
   border-left: 1px;
@@ -293,6 +315,7 @@ img:hover {
   border-style: solid;
   border-radius: 1%;
 }
+
 #carousel {
   margin-top: 70px;
 }
@@ -312,6 +335,7 @@ img:hover {
   padding: 0;
   display: flex;
 }
+
 .contactBlock {
   text-align: left;
   font-size: 16px;
@@ -321,6 +345,7 @@ img:hover {
   margin-top: 40px;
   /* margin-bottom: 40px; */
 }
+
 .cursive {
   font-style: italic;
   font-size: 18px;
@@ -359,6 +384,7 @@ img:hover {
   transition: bottom 0.3s;
   /* display: none; */
 }
+
 .header {
   position: fixed;
   height: 25px;
@@ -395,32 +421,25 @@ img:hover {
     margin-left: 0px;
     column-count: 2;
   }
-
   .jumbotron {
     margin-left: auto;
   }
-
   .sidebar {
     display: none;
   }
-
   .sidebar.scrolled {
     display: none;
   }
-
   #mobileNavbar {
     display: flex;
   }
-
   img {
     width: 100%;
     height: auto;
   }
-
   .display-4 {
     font-size: 2rem;
   }
-
 }
 
 @media screen and (max-width: 780px) {
@@ -428,34 +447,23 @@ img:hover {
     margin-left: 0px;
     column-count: 2;
   }
-
   .content {
     margin-left: 0;
   }
-
   .bg {
     height: 568px;
   }
 }
 
-@media screen and (max-width: 580px) {
-
+@media screen and (max-width: 480px) {
   /* Set the columns style */
   #imageGallery {
     width: 100%;
     column-count: 1;
   }
-
   .caption span.border {
     font-size: 1rem;
     padding: 9px;
     letter-spacing: 5px;
   }
- 
-  }
-  .bg {
-    height: 896px;
-  }
-
-
 }
