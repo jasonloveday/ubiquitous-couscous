@@ -2,6 +2,7 @@ html, body {
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -37,14 +38,38 @@ a {
 a:hover {
   font-weight: 700;
   color: inherit;
+  text-decoration: unset;
 }
 
-.menu {
+#desktopFooter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mobile {
+  display: none;
+}
+
+#mobileFooter {
+  display: none;
+}
+
+.footerText {
+  font-family: 'Crimson Pro';
+  font-weight: 200;
+  font-size: 16px;
+}
+
+#menu {
   font-weight: 200;
   font-size: 14px;
   letter-spacing: 1px;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+#menu .row {
+  justify-content: space-evenly;
 }
 
 .container {
@@ -121,7 +146,6 @@ img:hover {
 #imageGallery {
   height: 100%;
   column-count: 3;
-  margin-left: 75px;
   width: 100%;
   /* margin-right: 50px; */
   /* padding: 1px 16px; */
@@ -291,6 +315,10 @@ img:hover {
   margin-right: 15px;
 }
 
+.socials .row {
+  justify-content: space-evenly;
+}
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 
 .content {
@@ -343,6 +371,8 @@ img:hover {
 }
 
 .contactBlock {
+  justify-content: space-around;
+  align-items: center;
   text-align: left;
   font-size: 16px;
   font-weight: 200;
@@ -445,9 +475,19 @@ img:hover {
   .display-4 {
     font-size: 2rem;
   }
+  .menu {
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-width: 780px) {
+  #mobileFooter {
+    display: flex;
+    justify-content: space-around;
+  }
+  #desktopFooter {
+    display: none;
+  }
   #imageGallery {
     margin-left: 0px;
     column-count: 2;
@@ -466,9 +506,28 @@ img:hover {
     width: 100%;
     column-count: 1;
   }
+  #mobileFooter {
+    display: flex;
+    justify-content: space-around;
+  }
+  #desktopFooter {
+    display: none;
+  }
   .caption span.border {
     font-size: 1rem;
     padding: 9px;
     letter-spacing: 5px;
+  }
+  #menu .row {
+    justify-content: space-between;
+  }
+  .socials .row {
+    justify-content: center;
+  }
+  .mobile {
+    display: inherit;
+  }
+  .desktop {
+    display: none;
   }
 }

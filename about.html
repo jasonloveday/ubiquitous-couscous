@@ -29,25 +29,32 @@
 <body>
 
     <div w3-include-html="includes/menu.html"></div>
-
-    <div class="row about justify-content-center">
-        <div class="col md-6">
+<div class="container">
+    <div class="row about justify-content-around">
+        <div class="col-md-5">
 
             <img src="images/30456630457_4c43ebecd0_k.jpg"> </img>
         </div>
-        <div class="col-md-10 mt-5">
-
-            <!-- 50 words about you and your company -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, totam voluptas. Eveniet incidunt
-                optio quod placeat cupiditate laborum, debitis, ipsam amet eaque alias libero corporis voluptate.
-                Fuga accusamus ducimus, nulla accusantium sunt, aspernatur veritatis soluta incidunt, est nihil
-                consequuntur omnis magnam laudantium harum placeat delectus sint! Fuga a repudiandae assumenda!</p>
-
+        <div class="col-md-6 mt-5 mt-md-0 pt-0 align-self-center">
+            <div class="row">
+                <!-- 50 words about you and your company -->
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, totam voluptas. Eveniet incidunt
+                    optio quod placeat cupiditate laborum, debitis, ipsam amet eaque alias libero corporis voluptate.
+                    Fuga accusamus ducimus, nulla accusantium sunt, aspernatur veritatis soluta incidunt, est nihil
+                    consequuntur omnis magnam laudantium harum placeat delectus sint! Fuga a repudiandae assumenda!</p>
+            </div>
+            
+                <span class="desktop">
+                    <div w3-include-html="includes/socials.html"></div>
+                </span>
+          
         </div>
-    </div>
+</div>
 
     </div>
-    <div w3-include-html="includes/socials.html"></div>
+    <span class="mobile">
+        <div w3-include-html="includes/socials.html"></div>
+    </span>
     <div w3-include-html="includes/footer.html"></div>
     <!-- Optional JavaScript -->
     <script>var prevScrollpos = window.pageYOffset;
