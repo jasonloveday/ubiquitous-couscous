@@ -58,9 +58,16 @@
     </div>
         <div w3-include-html="includes/footer.html"></div>
         <!-- Optional JavaScript -->
-        <script>
-
-        </script>
+        <script>var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mainFooter").style.bottom = "0";
+              } else {
+                document.getElementById("mainFooter").style.bottom = "-80px";
+              }
+              prevScrollpos = currentScrollPos;
+            } </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

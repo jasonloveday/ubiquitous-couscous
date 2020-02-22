@@ -38,7 +38,7 @@
             Adelaide, Australia<br>
             <i class="fas fa-phone"></i> 0407 189 938<br>
             <a href="mailto:hi@irisblu.com.au?subject=Iris Blu"><i class="far fa-envelope"></i> hi@irisblu.com.au</a>
-            
+
         </div>
         <div class="col-md-5 mt-4">
             <img src="images/44765375732_75bb4ea38f_k.jpg" alt="">
@@ -54,22 +54,32 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-        <div w3-include-html="includes/footer.html"></div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script>
-            w3IncludeHTML();
-        </script>
-        <!-- <script>
+    <div w3-include-html="includes/footer.html"></div>
+    <!-- Optional JavaScript -->
+    <script>var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mainFooter").style.bottom = "0";
+            } else {
+                document.getElementById("mainFooter").style.bottom = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        } </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+    <!-- <script>
         $(document).ready(function () {
             $("[href]").each(function () {
                 if (this.href == window.location.href) {
