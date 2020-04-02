@@ -64,7 +64,7 @@ a:hover {
   font-weight: 200;
   font-size: 14px;
   letter-spacing: 1px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 60px;
 }
 
@@ -77,9 +77,11 @@ a:hover {
 }
 
 #logoSidebar {
-  width: 150px;
+  max-width: 200px;
   /* height: auto; */
-  margin-left: 15px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding-top: 0;
   padding-bottom: 2rem;
 }
 
@@ -212,6 +214,10 @@ img:hover {
   background-image: url("../images/40824461810_3ffbdb563d_k.jpg");
 }
 
+.quotes {
+  font-size: 14px;
+  font-style: italic;
+}
 /* ----- Navbar styling ----- */
 
 .dropdown-menu {
