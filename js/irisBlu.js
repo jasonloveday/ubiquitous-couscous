@@ -73,6 +73,27 @@ function getImages(album) {
         });
     });
 };
+function getImagesNew(album) {
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4bcd6e3d1a3647645b6b9150d6b01300&tags=" + album + "&per_page=12&format=json&nojsoncallback=1",
+        "headers": {}
+    }
+    $.ajax(settings).done(function (data) {
+        $("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
+        $.each(data.photos.photo, function (i, gp) {
+
+            var farmId = gp.farm;
+            var serverId = gp.server;
+            var id = gp.id;
+            var secret = gp.secret;
+
+            $("#flickr").append('<a class="dynamicGallery" data-fancybox="gallery" href="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '_b.jpg"" ><img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
+
+        });
+    });
+};
 
 // Make the current sidebar link highlighted
 // $(document).ready(function () {
@@ -138,13 +159,13 @@ function writeStorage(clicked) {
     } else {
         irisBlu.newGalleryId = (document.getElementById(clicked.id).attributes.id.value);;
     }
-    
+
     if (irisBlu.newCategory == "foodAndBev") {
         irisBlu.newGalleryName = "Food & Beverage";
     } else {
         irisBlu.newGalleryName = irisBlu.newCategory;
     }
-    
+
     localStorage.setItem('irisBlu', JSON.stringify(irisBlu));
     $("[href]").each(function () {
         if (this.href == window.location.href) {

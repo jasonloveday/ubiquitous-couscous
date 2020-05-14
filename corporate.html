@@ -32,26 +32,31 @@
 </head>
 
 <body onload="getImages('72157676858710437')">
- 
+  <!-- <body onload="getImagesNew('ib_corporate')"> -->
+
   <div w3-include-html="includes/menu.html"></div>
-  <div class="row justify-content-center">
+  <!-- <div class="row justify-content-center">
     <p>Corporate</p>
-  </div>
+  </div> -->
   <div id="galleryContainer" class="container">
 
 
     <div class="col-lg-12">
-      <div class=" jumbotron d-flex justify-content-center align-items-center">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa incidunt magnam consequuntur animi hic,
-          eveniet
-          temporibus obcaecati dolore ipsam illum?</p>
+      <div class=" quotes jumbotron d-flex justify-content-center align-items-center">
+        <p>“Doing business without advertising is like winking at a girl in the dark. You know what you're doing but
+          nobody else does.”<br>
+          <span class="author">― Steuart H Britt</span></p>
       </div>
     </div>
     <div id="imageGallery" class="gallery">
       <div class="flickrAlbum" id="flickr" data="72157690044034543"></div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div w3-include-html="includes/socials.html"></div>
+      </div>
+    </div>
   </div>
-  <div w3-include-html="includes/socials.html"></div>
   <div w3-include-html="includes/footer.html"></div>
   <!-- Optional JavaScript -->
   <script>var prevScrollpos = window.pageYOffset;

@@ -14,10 +14,10 @@ body {
   color: rgb(80, 85, 107);
   background-color: white;
   /* background-color: #e5ebea; */
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 50px;
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 200;
   margin-top: 50px;
 }
@@ -62,7 +62,7 @@ a:hover {
 
 #menu {
   font-weight: 200;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   /* margin-top: 60px; */
   margin-bottom: 60px;
@@ -215,13 +215,14 @@ img:hover {
 }
 
 .quotes {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
 }
+
 /* ----- Navbar styling ----- */
 
 .author {
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
 }
 
@@ -231,7 +232,7 @@ img:hover {
 
 .dropdown-menu a {
   font-weight: 200;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -311,10 +312,22 @@ img:hover {
 }
 
 .socials a {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 30px;
+}
+
+#fb-button:hover {
+  color: #344e86;
+}
+
+#insta-button:hover {
+  /* color: #f09433; */
+  /* color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); */
+  color: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
 .socials li {
@@ -352,13 +365,14 @@ img:hover {
 /* ----- Homepage carousel styling ----- */
 
 .carousel-item {
-  border-top: 1px;
+  /* border-top: 1px;
   border-left: 1px;
   border-right: 1px;
   border-bottom: 1px;
   border-color: rgb(80, 85, 107);
   border-style: solid;
-  border-radius: 1%;
+  border-radius: 1%; */
+  border: none;
 }
 
 #carousel {
@@ -511,6 +525,7 @@ img:hover {
   }
 }
 
+
 @media screen and (max-width: 480px) {
   /* Set the columns style */
   #imageGallery {
@@ -529,11 +544,22 @@ img:hover {
     padding: 9px;
     letter-spacing: 5px;
   }
+  #menuMobile {
+    padding-left: unset;
+    padding-right: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
   #menu .row {
     justify-content: space-between;
   }
+  #menu .row a {
+    margin-left: unset;
+    padding-left: 5px;
+
+  }
   .socials .row {
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .mobile {
     display: inherit;
