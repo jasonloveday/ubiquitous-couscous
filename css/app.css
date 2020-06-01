@@ -41,6 +41,12 @@ a:hover {
   text-decoration: unset;
 }
 
+.aboutImg {
+  max-width: 100%;
+  height: fit-content;
+  
+}
+
 #desktopFooter {
   display: flex;
   justify-content: space-evenly;
@@ -131,6 +137,7 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+  align-content: center;
 }
 
 #carouselImg {
@@ -400,6 +407,7 @@ img:hover {
   align-items: center;
   text-align: left;
   font-size: 16px;
+  letter-spacing: 3px;
   font-weight: 200;
   margin-left: 10px;
   margin-right: 10px;
@@ -434,7 +442,7 @@ img:hover {
   width: 100%;
   bottom: 0px;
   margin-bottom: 0px;
-  padding: 5px;
+  padding: 7px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -549,6 +557,9 @@ img:hover {
     padding-right: unset;
     margin-left: unset;
     margin-right: unset;
+  }
+  #menu {
+    margin-bottom: 25px;
   }
   #menu .row {
     justify-content: space-between;
