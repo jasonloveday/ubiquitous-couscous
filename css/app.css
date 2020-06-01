@@ -43,8 +43,8 @@ a:hover {
 
 .aboutImg {
   max-width: 100%;
-  height: fit-content;
-  
+  height: auto;
+
 }
 
 #desktopFooter {
@@ -569,6 +569,8 @@ img:hover {
     padding-left: 5px;
 
   }
+
+
   .socials .row {
     justify-content: space-evenly;
   }
