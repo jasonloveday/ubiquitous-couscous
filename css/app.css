@@ -540,6 +540,9 @@ img:hover {
     width: 100%;
     column-count: 1;
   }
+  #carouselImg {
+    max-height: 230px;
+  }
   #mobileFooter {
     display: flex;
     justify-content: space-around;
