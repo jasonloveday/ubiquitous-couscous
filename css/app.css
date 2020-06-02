@@ -570,7 +570,9 @@ img:hover {
 
   }
 
-
+.socials {
+  margin-top: 25px;
+}
   .socials .row {
     justify-content: space-evenly;
   }

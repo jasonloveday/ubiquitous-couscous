@@ -30,7 +30,12 @@
 <body>
 
 
-    <div w3-include-html="includes/menu.html"></div>
+    <span class="desktop">
+        <div w3-include-html="includes/menu.html"></div>
+    </span>
+    <span class="mobile">
+        <div w3-include-html="includes/menuMobile.html"></div>
+    </span>
     <div class="container">
         <div class="row pt-0 contactBlock justify-content-around align-items-center">
             <div class="col-md-4 d-flex desktop justify-content-around align-items-end mb-0" style="text-align:center;">
@@ -50,7 +55,7 @@
             </div>
             <span class="mobile">
 
-                <div class="col mb-5 mt-0">
+                <div class="col pb-5 mt-0">
                     Elissa Holmes<br>
                     Adelaide, Australia<br>
                     <i class="fas fa-phone"></i> 0407 189 938<br>
@@ -60,14 +65,10 @@
 
             </span>
 
-            <div class="col-md-6 mt-4 mt-md-0">
+            <div class="col-md-6 pt-3 mt-md-0 pb-5">
                 <img src="images/ib_contact.jpg" alt="">
             </div>
         </div>
-
-
-
-
     </div>
 
 

@@ -33,10 +33,12 @@
 
 <body onload="getImages('72157677162631147')">
 
-  <div w3-include-html="includes/menu.html"></div>
-  <!-- <div class="row justify-content-center">
-    <p>Lifestyle</p>
-  </div> -->
+  <span class="desktop">
+    <div w3-include-html="includes/menu.html"></div>
+  </span>
+  <span class="mobile">
+    <div w3-include-html="includes/menuMobile.html"></div>
+  </span>
   <div id="galleryContainer" class="container">
 
 
@@ -52,31 +54,31 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div w3-include-html="includes/socials.html"></div>
-  </div>
-  <div w3-include-html="includes/footer.html"></div>
-  <!-- Optional JavaScript -->
-  <script>var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("mainFooter").style.bottom = "0";
-      } else {
-        document.getElementById("mainFooter").style.bottom = "-80px";
-      }
-      prevScrollpos = currentScrollPos;
-    } </script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      </div>
+      <div w3-include-html="includes/footer.html"></div>
+      <!-- Optional JavaScript -->
+      <script>var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("mainFooter").style.bottom = "0";
+          } else {
+            document.getElementById("mainFooter").style.bottom = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        } </script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="js/jquery.fancybox.js"></script>
-  <script src="js/irisBlu.js"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <script src="js/irisBlu.js"></script>
 
 </body>
 
