@@ -26,14 +26,14 @@
     <title>Iris Blu | Testimonials</title>
 </head>
 
-<body>
+<body onload="getImages('72157715468278583')">
     <span class="desktop">
         <div w3-include-html="includes/menu.html"></div>
     </span>
     <span class="mobile">
-        <div w3-include-html="includes/menuMobile.html"></div>
+        <div w3-include-html="includes/navbar.html"></div>
     </span>
-    <div class="container">
+    <div class="container ">
         <div class="row about justify-content-around align-items-center">
             <div class="row justify-content-start mobile py-3">
                 <div class="col">
@@ -107,6 +107,19 @@
                     Harcourts Wine Coast</p>
             </div>
         </div>
+        <div class="row about justify-content-around align-items-center pt-md-5">
+            <span class="desktop"><h4>Some of my Favourite Customers</h4></span>
+            <span class="mobile"><h5>Some of my Favourite Customers</h5></span>
+        </div>
+        
+        <div class="row about justify-content-around align-items-center">
+            <div class="col-md-12">
+            <div id="imageGallery" class="gallery">
+                <div class="flickrAlbum" id="flickr" data="72157715468278583"></div>
+              </div>
+              
+        </div>
+        </div>
         <span class="desktop">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -115,6 +128,7 @@
             </div>
         </span>
     </div>
+   
     <span class="mobile">
         <div w3-include-html="includes/socials.html"></div>
     </span>

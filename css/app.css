@@ -90,6 +90,10 @@ a:hover {
   padding-top: 0;
   padding-bottom: 2rem;
 }
+#logoNavMobile {
+  max-width: 100px;
+
+}
 
 /* ----- Specific buttons for our theme ----- */
 
@@ -238,13 +242,13 @@ img:hover {
 }
 
 .dropdown-menu a {
-  font-weight: 200;
+  font-weight: 700;
   font-size: 16px;
   text-align: left;
 }
 
 .navbar {
-  background-color: rgba(80, 85, 107, 0.6);
+  background-color: rgba(80, 85, 107, 0.9);
   min-height: 5px;
   padding: 0px 5px;
   color: white;
@@ -254,8 +258,11 @@ img:hover {
   font-size: 1rem;
 }
 
+.navbar-brand img {
+  max-width: 50%;
+}
 .navbar-toggler {
-  color: pink;
+  color: white;
 }
 
 .dropdown-divider {
