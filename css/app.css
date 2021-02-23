@@ -164,6 +164,10 @@ img:hover {
   /* padding: 1px 16px; */
 }
 
+#logoGallery {
+  column-count: 6;
+}
+
 #imageGallery img {
   /* padding:8px; */
   /* padding-left: 1px; */
@@ -546,6 +550,9 @@ img:hover {
   #imageGallery {
     width: 100%;
     column-count: 1;
+  }
+  #logoGallery {
+    column-count: 2;
   }
   #carouselImg {
     max-height: 230px;
