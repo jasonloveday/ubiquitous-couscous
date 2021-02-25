@@ -119,7 +119,7 @@ a:hover {
 }
 
 .navbar-text {
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
   padding-right: 5px;
