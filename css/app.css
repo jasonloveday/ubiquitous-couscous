@@ -559,7 +559,7 @@ img:hover {
   /* Set the columns style */
   #imageGallery {
     width: 100%;
-    column-count: 1;
+    column-count: 2;
   }
   #logoGallery {
     column-count: 2;
