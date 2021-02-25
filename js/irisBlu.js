@@ -7,6 +7,7 @@ window.oncontextmenu = (e) => {
 
 // Include other HTML files
 function includeHTML() {
+    var irisBlu = JSON.parse(localStorage.getItem('irisBlu')) || [];
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
@@ -36,6 +37,7 @@ function includeHTML() {
             return;
         }
     }
+    document.getElementById("galleryName").innerHTML = irisBlu.newGalleryName;
 };
 
 // Set scrolled class for sidebar and footer
@@ -117,14 +119,17 @@ function changeGallery() {
 
     // get the data from localStorage
     var irisBlu = JSON.parse(localStorage.getItem('irisBlu')) || [];
+   
 
     // set the album ID in the html
     $('#flickr').attr('data', irisBlu.newGalleryId);
 
     //  set the gallery name
-    $(".border")[0].innerHTML = irisBlu.newGalleryName;
-
-    // set the bg image tag
+    // $("#galleryName")[0].innerHTML = irisBlu.newGalleryName;
+   
+    
+    
+        // set the bg image tag
     $(".bg").removeClass(irisBlu.oldCategory);
     $(".bg").addClass(irisBlu.newCategory);
 
@@ -138,13 +143,13 @@ function changeGallery() {
     $(link).addClass("active");
 
     // clear all current images
-    var oldImages = document.getElementById("flickr").querySelectorAll(".dynamicGallery");
-    setTimeout(function () {
-        $(oldImages).remove();
-    }, 1000);
+    // var oldImages = document.getElementById("flickr").querySelectorAll(".dynamicGallery");
+    // setTimeout(function () {
+    //     $(oldImages).remove();
+    // }, 1000);
 
     // get new images
-    getImages();
+    // getImages();
 }
 
 function writeStorage(clicked) {
@@ -162,15 +167,18 @@ function writeStorage(clicked) {
 
     if (irisBlu.newCategory == "foodAndBev") {
         irisBlu.newGalleryName = "Food & Beverage";
+    } else if (irisBlu.newCategory == "productBranding") {
+        irisBlu.newGalleryName = "Product & Branding";
     } else {
         irisBlu.newGalleryName = irisBlu.newCategory;
     }
 
     localStorage.setItem('irisBlu', JSON.stringify(irisBlu));
+    
     $("[href]").each(function () {
         if (this.href == window.location.href) {
             irisBlu.oldGalleryId = (document.getElementById("flickr").attributes.data.value);
-            irisBlu.oldCategory = (document.getElementById(irisBlu.oldGalleryId).attributes.name.value);
+            // irisBlu.oldCategory = (document.getElementById(irisBlu.oldGalleryId).attributes.name.value);
             localStorage.setItem('irisBlu', JSON.stringify(irisBlu));
             changeGallery();
         }
