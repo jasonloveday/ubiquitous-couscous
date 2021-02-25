@@ -37,7 +37,6 @@ function includeHTML() {
             return;
         }
     }
-    document.getElementById("galleryName").innerHTML = irisBlu.newGalleryName;
 };
 
 // Set scrolled class for sidebar and footer
@@ -75,16 +74,17 @@ function getImages(album) {
         });
     });
 };
-function getImagesNew(album) {
+
+function getLogos(album) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4bcd6e3d1a3647645b6b9150d6b01300&tags=" + album + "&per_page=12&format=json&nojsoncallback=1",
+        "url": "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=4bcd6e3d1a3647645b6b9150d6b01300&photoset_id=" + album + "&per_page=50&format=json&nojsoncallback=1",
         "headers": {}
     }
     $.ajax(settings).done(function (data) {
-        $("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
-        $.each(data.photos.photo, function (i, gp) {
+        $("#galleryTitle").append(data.photoset.photo[0].title + " Gallery");
+        $.each(data.photoset.photo, function (i, gp) {
 
             var farmId = gp.farm;
             var serverId = gp.server;
@@ -97,17 +97,6 @@ function getImagesNew(album) {
     });
 };
 
-// Make the current sidebar link highlighted
-// $(document).ready(function () {
-
-//     $("[href]").each(function () {
-//         if (this.href == window.location.href) {
-//             $(this).addClass("active");
-//         }
-//     });
-
-
-// });
 
 
 function changeGallery() {
