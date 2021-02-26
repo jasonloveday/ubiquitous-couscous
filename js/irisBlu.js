@@ -79,7 +79,7 @@ function getLogos(album) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=4bcd6e3d1a3647645b6b9150d6b01300&photoset_id=" + album + "&per_page=50&format=json&nojsoncallback=1",
+        "url": "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=4bcd6e3d1a3647645b6b9150d6b01300&photoset_id=" + album + "&per_page=20&format=json&nojsoncallback=1",
         "headers": {}
     }
     $.ajax(settings).done(function (data) {

@@ -404,7 +404,8 @@ img:hover {
 }
 
 #carousel {
-  margin-top: 70px;
+  /* margin-top: 70px; */
+  padding-top: 2em;
 }
 
 .container {
