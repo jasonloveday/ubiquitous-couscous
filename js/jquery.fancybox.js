@@ -113,8 +113,8 @@
 
     iframe: {
       // Iframe template
+      // tpl: '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src=""></iframe>',
       tpl: '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src=""></iframe>',
-
       // Preload iframe before displaying it
       // This allows to calculate iframe content width and height
       // (note: Due to "Same Origin Policy", you can't get cross domain data).
@@ -3467,7 +3467,7 @@
     vimeo: {
       matcher: /^.+vimeo.com\/(.*\/)?([\d]+)(.*)?/,
       params: {
-        autoplay: 1,
+        autoplay: 0,
         hd: 1,
         show_title: 1,
         show_byline: 1,
@@ -3476,7 +3476,7 @@
       },
       paramPlace: 3,
       type: "iframe",
-      url: "//player.vimeo.com/video/$2"
+      url: "https://player.vimeo.com/video/$2"
     },
 
     instagram: {
